@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>iqplot.box &mdash; iqplot  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script >var togglebuttonSelector = '.toggle';</script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="iqplot.strip" href="iqplot.strip.html" />
+    <link rel="prev" title="API Reference" href="../api.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #F0F0F0" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> iqplot
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html">Purpose and contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html#why-iqplot">Why iqplot?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">Basic usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../omissions.html">Intentional omissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../holoviews.html">Relationship to HoloViews</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">iqplot.box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.strip.html">iqplot.strip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.histogram.html">iqplot.histogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.ecdf.html">iqplot.ecdf</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Credits and citation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#license">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#citing-iqplot">Citing iqplot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">iqplot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+<li><a href="https://github.com/justinbois/iqplot">iqplot repo on GitHub</a></li>
+
+    
+  <li class="wy-breadcrumbs-aside">
+    
+        
+        
+            <a href="../../_sources/user_guide/generated/iqplot.box.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    
+  </li>
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="iqplot-box">
+<h1>iqplot.box<a class="headerlink" href="#iqplot-box" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="iqplot.box">
+<code class="sig-prename descclassname">iqplot.</code><code class="sig-name descname">box</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cats</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q_axis</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">palette</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">whisker_caps</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">display_points</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">outlier_marker</span><span class="o">=</span><span class="default_value">'circle'</span></em>, <em class="sig-param"><span class="n">min_data</span><span class="o">=</span><span class="default_value">5</span></em>, <em class="sig-param"><span class="n">box_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">median_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">whisker_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">outlier_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">display_outliers</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">horizontal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.box" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a box-and-whisker plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Pandas</span> <span class="pre">DataFrame</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">1D</span> <span class="pre">Numpy</span> <span class="pre">array</span></code>, or <code class="xref py py-class docutils literal notranslate"><span class="pre">xarray</span></code>) – DataFrame containing tidy data for plotting.  If a Numpy array,
+a single category is assumed and a box plot generated from
+data.</p></li>
+<li><p><strong>q</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">hashable</span></code>) – Name of column to use as quantitative variable if <cite>data</cite> is a
+Pandas DataFrame. Otherwise, <cite>q</cite> is used as the quantitative
+axis label.</p></li>
+<li><p><strong>cats</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">hashable</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">hashables</span></code>) – Name of column(s) to use as categorical variable(s).</p></li>
+<li><p><strong>q_axis</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, either <code class="docutils literal notranslate"><span class="pre">'x'</span></code> or <code class="docutils literal notranslate"><span class="pre">'y'</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'x'</span></code>) – Axis along which the quantitative value varies.</p></li>
+<li><p><strong>palette</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">strings</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">hex</span> <span class="pre">colors</span></code>, or <code class="xref py py-class docutils literal notranslate"><span class="pre">single</span> <span class="pre">hex</span> <span class="pre">string</span></code>) – If a list, color palette to use. If a single string representing
+a hex color, all glyphs are colored with that color. Default is
+colorcet.b_glasbey_category10 from the colorcet package.</p></li>
+<li><p><strong>order</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – If not None, must be a list of unique group names when the input
+data frame is grouped by <cite>cats</cite>. The order of the list specifies
+the ordering of the categorical variables on the categorical
+axis and legend. If None, the categories appear in the order in
+which they appeared in the inputted data frame.</p></li>
+<li><p><strong>p</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bokeh.plotting.Figure</span> <span class="pre">instance</span></code>, or <code class="xref py py-class docutils literal notranslate"><span class="pre">None</span> <span class="pre">(default)</span></code>) – If None, create a new figure. Otherwise, populate the existing
+figure <cite>p</cite>.</p></li>
+<li><p><strong>whisker_caps</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – If True, put caps on whiskers. If False, omit caps.</p></li>
+<li><p><strong>display_points</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>) – If True, display outliers and any other points that arise from
+categories with fewer than <cite>min_data</cite> data points; otherwise
+suppress them. This should only be False when making an overlay
+with a strip plot.</p></li>
+<li><p><strong>outlier_marker</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'circle'</span></code>) – Name of marker to be used in the plot (ignored if <cite>formal</cite> is
+False). Must be one of[‘asterisk’, ‘circle’, ‘circle_cross’,
+‘circle_x’, ‘cross’, ‘dash’, ‘diamond’, ‘diamond_cross’, ‘hex’,
+‘inverted_triangle’, ‘square’, ‘square_cross’, ‘square_x’,
+‘triangle’, ‘x’]</p></li>
+<li><p><strong>min_data</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">5</span></code>) – Minimum number of data points in a given category in order to
+make a box and whisker. Otherwise, individual data points are
+plotted as in a strip plot.</p></li>
+<li><p><strong>box_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – A dictionary of kwargs to be passed into <cite>p.hbar()</cite> or
+<cite>p.vbar()</cite> when constructing the boxes for the box plot.</p></li>
+<li><p><strong>median_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – A dictionary of kwargs to be passed into <cite>p.hbar()</cite> or
+<cite>p.vbar()</cite> when constructing the median line for the box plot.</p></li>
+<li><p><strong>whisker_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – A dictionary of kwargs to be passed into <cite>p.segment()</cite>
+when constructing the whiskers for the box plot.</p></li>
+<li><p><strong>outlier_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – A dictionary of kwargs to be passed into <cite>p.circle()</cite>
+when constructing the outliers for the box plot.</p></li>
+<li><p><strong>horizontal</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>) – Deprecated. Use <cite>q_axis</cite>.</p></li>
+<li><p><strong>kwargs</strong> – Kwargs that are passed to bokeh.plotting.figure() in contructing
+the figure.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>output</strong> – Plot populated with box-and-whisker plot.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bokeh.plotting.Figure</span> <span class="pre">instance</span></code></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Uses the Tukey convention for box plots. The top and bottom of
+the box are respectively the 75th and 25th percentiles of the
+data. The line in the middle of the box is the median. The top
+whisker extends to the maximum of the set of data points that are
+less than 1.5 times the IQR beyond the top of the box, with an
+analogous definition for the lower whisker. Data points not
+between the ends of the whiskers are considered outliers and are
+plotted as individual points.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="iqplot.strip.html" class="btn btn-neutral float-right" title="iqplot.strip" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../api.html" class="btn btn-neutral float-left" title="API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">
+        Last updated on Aug 12, 2020.
+      </span>
+
+    </p>
+  </div> <jinja2.runtime.BlockReference object at 0x7fa5ef55d710> 
+
+<p>© 2020 Justin Bois.</p>
+
+<p>This document was prepared at <a rel="caltech" href="http://www.caltech.edu">Caltech</a> with financial support from the <a rel="rosen" href="http://rosen.caltech.edu">Donna and Benjamin M. Rosen Bioengineering Center</a>.</p>
+
+<br />
+
+<p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+
+ 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    
+
+  <style>
+         .wy-nav-content { max-width: none; }
+  </style>
+
+
+
+</body>
+</html>

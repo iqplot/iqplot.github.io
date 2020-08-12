@@ -1,0 +1,6 @@
+﻿iqplot.box
+==========
+
+.. currentmodule:: iqplot
+
+.. autofunction:: box

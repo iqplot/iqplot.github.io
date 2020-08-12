@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>iqplot.strip &mdash; iqplot  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script >var togglebuttonSelector = '.toggle';</script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="iqplot.histogram" href="iqplot.histogram.html" />
+    <link rel="prev" title="iqplot.box" href="iqplot.box.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #F0F0F0" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> iqplot
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html">Purpose and contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html#why-iqplot">Why iqplot?</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">Basic usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../omissions.html">Intentional omissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../holoviews.html">Relationship to HoloViews</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="iqplot.box.html">iqplot.box</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">iqplot.strip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.histogram.html">iqplot.histogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.ecdf.html">iqplot.ecdf</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Credits and citation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#license">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#citing-iqplot">Citing iqplot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">iqplot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+<li><a href="https://github.com/justinbois/iqplot">iqplot repo on GitHub</a></li>
+
+    
+  <li class="wy-breadcrumbs-aside">
+    
+        
+        
+            <a href="../../_sources/user_guide/generated/iqplot.strip.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    
+  </li>
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="iqplot-strip">
+<h1>iqplot.strip<a class="headerlink" href="#iqplot-strip" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="iqplot.strip">
+<code class="sig-prename descclassname">iqplot.</code><code class="sig-name descname">strip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cats</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q_axis</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">palette</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_legend</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">color_column</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tooltips</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">marker</span><span class="o">=</span><span class="default_value">'circle'</span></em>, <em class="sig-param"><span class="n">jitter</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">marker_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">jitter_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">horizontal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.strip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a strip plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Pandas</span> <span class="pre">DataFrame</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">1D</span> <span class="pre">Numpy</span> <span class="pre">array</span></code>, or <code class="xref py py-class docutils literal notranslate"><span class="pre">xarray</span></code>) – DataFrame containing tidy data for plotting.  If a Numpy array,
+a single category is assumed and a box plot generated from
+data.</p></li>
+<li><p><strong>q</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">hashable</span></code>) – Name of column to use as quantitative variable if <cite>data</cite> is a
+Pandas DataFrame. Otherwise, <cite>q</cite> is used as the quantitative
+axis label.</p></li>
+<li><p><strong>cats</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">hashable</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">hashables</span></code>) – Name of column(s) to use as categorical variable(s).</p></li>
+<li><p><strong>q_axis</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, either <code class="docutils literal notranslate"><span class="pre">'x'</span></code> or <code class="docutils literal notranslate"><span class="pre">'y'</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'x'</span></code>) – Axis along which the quantitative value varies.</p></li>
+<li><p><strong>palette</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">strings</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">hex</span> <span class="pre">colors</span></code>, or <code class="xref py py-class docutils literal notranslate"><span class="pre">single</span> <span class="pre">hex</span> <span class="pre">string</span></code>) – If a list, color palette to use. If a single string representing
+a hex color, all glyphs are colored with that color. Default is
+colorcet.b_glasbey_category10 from the colorcet package.</p></li>
+<li><p><strong>order</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – If not None, must be a list of unique group names when the input
+data frame is grouped by <cite>cats</cite>. The order of the list specifies
+the ordering of the categorical variables on the categorical
+axis and legend. If None, the categories appear in the order in
+which they appeared in the inputted data frame.</p></li>
+<li><p><strong>p</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bokeh.plotting.Figure</span> <span class="pre">instance</span></code>, or <code class="xref py py-class docutils literal notranslate"><span class="pre">None</span> <span class="pre">(default)</span></code>) – If None, create a new figure. Otherwise, populate the existing
+figure <cite>p</cite>.</p></li>
+<li><p><strong>show_legend</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – If True, display legend.</p></li>
+<li><p><strong>color_column</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Column of <cite>data</cite> to use in determining color of glyphs. If None,
+then <cite>cats</cite> is used.</p></li>
+<li><p><strong>tooltips</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">2-tuples</span></code>) – Specification for tooltips as per Bokeh specifications. For
+example, if we want <cite>col1</cite> and <cite>col2</cite> tooltips, we can use
+<cite>tooltips=[(‘label 1’: ‘&#64;col1’), (‘label 2’: ‘&#64;col2’)]</cite>.</p></li>
+<li><p><strong>marker</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'circle'</span></code>) – Name of marker to be used in the plot (ignored if <cite>formal</cite> is
+False). Must be one of[‘asterisk’, ‘circle’, ‘circle_cross’,
+‘circle_x’, ‘cross’, ‘dash’, ‘diamond’, ‘diamond_cross’, ‘hex’,
+‘inverted_triangle’, ‘square’, ‘square_cross’, ‘square_x’,
+‘triangle’, ‘x’]</p></li>
+<li><p><strong>jitter</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – If True, apply a jitter transform to the glyphs.</p></li>
+<li><p><strong>marker_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>) – Keyword arguments to pass when adding markers to the plot.
+[“x”, “y”, “source”, “cat”, “legend”] are note allowed because
+they are determined by other inputs.</p></li>
+<li><p><strong>jitter_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>) – Keyword arguments to be passed to <cite>bokeh.transform.jitter()</cite>. If
+not specified, default is
+<cite>{‘distribution’: ‘normal’, ‘width’: 0.1}</cite>. If the user
+specifies <cite>{‘distribution’: ‘uniform’}</cite>, the <cite>‘width’</cite> entry is
+adjusted to 0.4.</p></li>
+<li><p><strong>horizontal</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>) – Deprecated. Use <cite>q_axis</cite>.</p></li>
+<li><p><strong>kwargs</strong> – Any kwargs to be passed to <cite>bokeh.plotting.figure()</cite> when
+instantiating the figure.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>output</strong> – Plot populated with a strip plot.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bokeh.plotting.Figure</span> <span class="pre">instance</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="iqplot.histogram.html" class="btn btn-neutral float-right" title="iqplot.histogram" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="iqplot.box.html" class="btn btn-neutral float-left" title="iqplot.box" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">
+        Last updated on Aug 12, 2020.
+      </span>
+
+    </p>
+  </div> <jinja2.runtime.BlockReference object at 0x7fa5ef2c7190> 
+
+<p>© 2020 Justin Bois.</p>
+
+<p>This document was prepared at <a rel="caltech" href="http://www.caltech.edu">Caltech</a> with financial support from the <a rel="rosen" href="http://rosen.caltech.edu">Donna and Benjamin M. Rosen Bioengineering Center</a>.</p>
+
+<br />
+
+<p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+
+ 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    
+
+  <style>
+         .wy-nav-content { max-width: none; }
+  </style>
+
+
+
+</body>
+</html>

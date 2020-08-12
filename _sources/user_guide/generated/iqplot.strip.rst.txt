@@ -1,0 +1,6 @@
+﻿iqplot.strip
+============
+
+.. currentmodule:: iqplot
+
+.. autofunction:: strip
