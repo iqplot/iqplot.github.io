@@ -201,7 +201,7 @@
 <h1>iqplot.histogram<a class="headerlink" href="#iqplot-histogram" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
 <dt id="iqplot.histogram">
-<code class="sig-prename descclassname">iqplot.</code><code class="sig-name descname">histogram</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cats</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">palette</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q_axis</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_legend</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">bins</span><span class="o">=</span><span class="default_value">'freedman-diaconis'</span></em>, <em class="sig-param"><span class="n">density</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">kind</span><span class="o">=</span><span class="default_value">'step_filled'</span></em>, <em class="sig-param"><span class="n">click_policy</span><span class="o">=</span><span class="default_value">'hide'</span></em>, <em class="sig-param"><span class="n">line_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">horizontal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.histogram" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">iqplot.</code><code class="sig-name descname">histogram</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cats</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">palette</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q_axis</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_legend</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">bins</span><span class="o">=</span><span class="default_value">'freedman-diaconis'</span></em>, <em class="sig-param"><span class="n">density</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">kind</span><span class="o">=</span><span class="default_value">'step_filled'</span></em>, <em class="sig-param"><span class="n">click_policy</span><span class="o">=</span><span class="default_value">'hide'</span></em>, <em class="sig-param"><span class="n">line_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">horizontal</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.histogram" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make a plot of histograms.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -243,7 +243,7 @@ histograms. By default, {“line_width”: 2}.</p></li>
 <li><p><strong>fill_kwargs</strong> (<em>dict</em>) – Keyword arguments to pass to <cite>p.patch()</cite> when making the fill
 for the step-filled histogram. Ignored if <cite>kind = ‘step’</cite>. By
 default {“fill_alpha”: 0.3, “line_alpha”: 0}.</p></li>
-<li><p><strong>horizontal</strong> (<em>bool</em><em>, </em><em>default False</em>) – Deprecated. Use <cite>q_axis</cite>.</p></li>
+<li><p><strong>horizontal</strong> (<em>bool</em><em> or </em><em>None</em><em>, </em><em>default None</em>) – Deprecated. Use <cite>q_axis</cite>.</p></li>
 <li><p><strong>val</strong> (<em>hashable</em>) – Deprecated, use <cite>q</cite>.</p></li>
 <li><p><strong>kwargs</strong> – Any kwargs to be passed to <cite>bokeh.plotting.figure()</cite> when making
 the plot.</p></li>
@@ -281,11 +281,11 @@ the plot.</p></li>
   <div role="contentinfo">
     <p>
       <span class="lastupdated">
-        Last updated on Aug 14, 2020.
+        Last updated on Aug 23, 2020.
       </span>
 
     </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7fec707f3b80> 
+  </div> <jinja2.runtime.BlockReference object at 0x7f91949847c0> 
 
 <p>© 2020 Justin Bois.</p>
 
