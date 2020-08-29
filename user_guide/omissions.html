@@ -430,10 +430,10 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="section" id="Intentional-omissions">
 <h1>Intentional omissions<a class="headerlink" href="#Intentional-omissions" title="Permalink to this headline">¶</a></h1>
-<p>IQplot is intentionally limited in scope. It is restricted to only data sets with a single quantitative variable. It is further limited in that only four types of plots (albeit with allowance for a fair amount of configurability) are allowed. Nonetheless, there are a few plots that fall into the one quantitative variable class of plots. Here, we address why those are <em>not</em> included.</p>
+<p>IQplot is intentionally limited in scope. It is restricted to only data sets with a single quantitative variable. It is further limited in that only five types of plots (albeit with allowance for a fair amount of configurability) are allowed. Nonetheless, there are a few plots that fall into the one quantitative variable class of plots. Here, we address why those are <em>not</em> included.</p>
 <div class="section" id="Why-no-stacked-bar-graphs?">
 <h2>Why no stacked bar graphs?<a class="headerlink" href="#Why-no-stacked-bar-graphs?" title="Permalink to this headline">¶</a></h2>
-<p>Stacked bar graphs are useful to displaying relative count data, but unfortunately, their utility is somewhat restricted to that. All four functions in iqplot hand arbitrary scalar-valued quantitative data (including negative values), and allow for arbitrary many measurements per category. A stacked bar graph either requires one non-negative quantitative value per category or requires a count operation on the data points, which has a very specific, possibly ambiguous meaning. So, a stacked bar
+<p>Stacked bar graphs are useful to displaying relative count data, but unfortunately, their utility is somewhat restricted to that. All five functions in iqplot handle arbitrary scalar-valued quantitative data (including negative values), and allow for arbitrary many measurements per category. A stacked bar graph either requires one non-negative quantitative value per category or requires a count operation on the data points, which has a very specific, possibly ambiguous meaning. So, a stacked bar
 graph would necessitate restrictions on allowed data types beyond those allowed by the other four kinds of plots.</p>
 <p>Beyond that, there are often better choices than stacked bar. To demonstrate, consider making a stacked bar plot of the counts of cars with each number of cylinders from each region of origin.</p>
 <div class="nbinput docutils container">
@@ -1053,7 +1053,7 @@ var element = document.currentScript.previousSibling.previousSibling;
       </span>
 
     </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7fd9756bdfd0> 
+  </div> <jinja2.runtime.BlockReference object at 0x7f896de81250> 
 
 <p>© 2020 Justin Bois.</p>
 

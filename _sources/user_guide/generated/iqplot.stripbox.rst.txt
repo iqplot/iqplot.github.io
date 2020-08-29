@@ -1,0 +1,6 @@
+﻿iqplot.stripbox
+===============
+
+.. currentmodule:: iqplot
+
+.. autofunction:: stripbox

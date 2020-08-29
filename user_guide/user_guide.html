@@ -893,7 +893,7 @@ descriptor of the automobile that takes on a few discrete values.</p>
 <div class="section" id="Quick-start">
 <h2>Quick start<a class="headerlink" href="#Quick-start" title="Permalink to this headline">¶</a></h2>
 <p>In the most common usage, iqplot generates plots from tidy data frames where some columns may contain categorical data and the column of interest in the plot is quantitative.</p>
-<p>There are four types of plots that iqplot generates.</p>
+<p>There are five types of plots that iqplot generates.</p>
 <ul class="simple">
 <li><p><strong>Plots with a categorical axis</strong></p>
 <ul>
@@ -923,7 +923,7 @@ descriptor of the automobile that takes on a few discrete values.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">data</span></code> is given as a Numpy array, it is the only required argument. If <code class="docutils literal notranslate"><span class="pre">data</span></code> is given as a Pandas DataFrame, <code class="docutils literal notranslate"><span class="pre">q</span></code> must also be supplied. All other arguments are optional and have reasonably set defaults.</p>
 <p>The respective plots also have kwargs that are specific to them. Examples highlighting some, but not all, customizations are in the following sections.</p>
 <p>Any extra kwargs not in the function call signature are passed to <code class="docutils literal notranslate"><span class="pre">bokeh.plotting.figure()</span></code> when the figure is instantiated.</p>
-<p>Here are the four default plots for <code class="docutils literal notranslate"><span class="pre">cats</span> <span class="pre">=</span> <span class="pre">'origin'</span></code> and <code class="docutils literal notranslate"><span class="pre">q</span> <span class="pre">=</span> <span class="pre">'mpg'</span></code>.</p>
+<p>Here are the five default plots for <code class="docutils literal notranslate"><span class="pre">cats</span> <span class="pre">=</span> <span class="pre">'origin'</span></code> and <code class="docutils literal notranslate"><span class="pre">q</span> <span class="pre">=</span> <span class="pre">'mpg'</span></code>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -1046,7 +1046,7 @@ var element = document.currentScript.previousSibling.previousSibling;
 </div>
 <div class="section" id="Fine-tuning-of-plots">
 <h2>Fine-tuning of plots<a class="headerlink" href="#Fine-tuning-of-plots" title="Permalink to this headline">¶</a></h2>
-<p>In the following, we investigate each of the four kind of plots and explore some, but not all, of the configuration options. Refer to the <a class="reference internal" href="api.html"><span class="doc">API reference</span></a> for details about possible keyword arguments.</p>
+<p>In the following, we investigate each of the five kind of plots and explore some, but not all, of the configuration options. Refer to the <a class="reference internal" href="api.html"><span class="doc">API reference</span></a> for details about possible keyword arguments.</p>
 <div class="section" id="Strip-plots">
 <h3>Strip plots<a class="headerlink" href="#Strip-plots" title="Permalink to this headline">¶</a></h3>
 <p>We can make a strip plot with dash markers and add some transparency.</p>
@@ -2013,7 +2013,7 @@ var element = document.currentScript.previousSibling.previousSibling;
       </span>
 
     </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7fd973ac1f10> 
+  </div> <jinja2.runtime.BlockReference object at 0x7f896ff5a280> 
 
 <p>© 2020 Justin Bois.</p>
 

@@ -200,13 +200,14 @@
 </ul>
 <p>The first two letters of the package name are meant to indicate one (Roman number I) quantitative (Q) variable.</p>
 <p>The subclass of data sets that contain a single quantitative variable (and possibly several categorical variables) abound in the biological sciences, which was the primary motivation for making this package in the first place.</p>
-<p>There are four types of plots that iqplot can generate.</p>
+<p>There are five types of plots that iqplot can generate.</p>
 <ul>
 <li><p><strong>Plots with a categorical axis</strong></p>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Box_plot">Box plots</a></p></li>
 <li><p>Strip plots</p></li>
+<li><p>Strip-box plots (strip and box plots overlaid)</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -219,12 +220,12 @@
 </div></blockquote>
 </li>
 </ul>
-<p>In general, you should <strong>plot all of your data</strong>. Strip plots and <a class="reference external" href="https://en.wikipedia.org/wiki/Empirical_distribution_function)">ECDFs</a> do this, but box plots and histograms do not. A box plot provides a quick visual display of summary statistics (specifically quantiles), and histogram provides an approximate visualization of the probability density function underlying the data generation process. So, both serve a purpose, so they are included in iqplot. However, in my opinion, a box plot should mostly be used when overlayed with a strip plot. The box plot is then an annotation of the plot of all of the data. For visualizing the shape of distributions, ECDFs are superior to histograms in that they serve to visualize the cumulative distribution function of the underlying the data generation process (which has the same information as the probability density function) and do so while plotting all data and not introducing arbitrary binning.</p>
-<p>So, you should view the box plot and histogram functionality of iqplot to be add-ons, with strip plots and ECDFs being the most important functionality.</p>
+<p>In general, you should <strong>plot all of your data</strong>. Strip plots and <a class="reference external" href="https://en.wikipedia.org/wiki/Empirical_distribution_function)">ECDFs</a> do this, but box plots and histograms do not (though they can be annotated with rug plots that do display all of the data). A box plot provides a quick visual display of summary statistics (specifically quantiles), and histogram provides an approximate visualization of the probability density function underlying the data generation process. So, both serve a purpose, so they are included in iqplot. However, in my opinion, a box plot should mostly be used when overlayed with a strip plot, as strip-box plot. The box plot is then an annotation of the plot of all of the data. For visualizing the shape of distributions, ECDFs are superior to histograms in that they serve to visualize the cumulative distribution function of the underlying the data generation process (which has the same information as the probability density function) and do so while plotting all data and not introducing arbitrary binning.</p>
+<p>So, you should view the box plot and histogram functionality of iqplot to be add-ons, with strip plots, strip-box plots, and ECDFs being the most important functionality.</p>
 </div>
 <div class="section" id="why-iqplot">
 <h1>Why iqplot?<a class="headerlink" href="#why-iqplot" title="Permalink to this headline">¶</a></h1>
-<p>This package was originally developed to enable rapid generation of these plots, particularly ECDFs using <a class="reference external" href="https://bokeh.pydata.org/">Bokeh</a>, a powerful plotting library. Since its initial development, <a class="reference external" href="https://holoviews.org/">HoloViews</a> has emerged as an excellent high-level plotting package that can use Bokeh to render plots. Much of what this module provides is available in HoloViews, and you can see comparisons in the <a class="reference internal" href="../user_guide/holoviews.html#Relationship-to-HoloViews"><span class="std std-ref">Relationship to HoloViews</span></a> section. Nonetheless, I have still found this package useful to quickly generate useful plots. Importantly, generating ECDFs with bootstrapped confidence intervals is available in this package, but is nontrivial to do using HoloViews.</p>
+<p>This package was originally developed to enable rapid generation of these plots, particularly ECDFs using <a class="reference external" href="https://bokeh.pydata.org/">Bokeh</a>, a powerful plotting library. Since its initial development, <a class="reference external" href="https://holoviews.org/">HoloViews</a> has emerged as an excellent high-level plotting package that can use Bokeh to render plots. Much of what iqplot provides is available in HoloViews, and you can see comparisons in the <a class="reference internal" href="../user_guide/holoviews.html#Relationship-to-HoloViews"><span class="std std-ref">Relationship to HoloViews</span></a> section. Nonetheless, I have still found this package useful to quickly generate plots. Importantly, generating ECDFs with bootstrapped confidence intervals is available in iqplot, but is nontrivial to do using HoloViews.</p>
 </div>
 
 
@@ -252,7 +253,7 @@
       </span>
 
     </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7fd9742551f0> 
+  </div> <jinja2.runtime.BlockReference object at 0x7f896cf19d90> 
 
 <p>© 2020 Justin Bois.</p>
 
