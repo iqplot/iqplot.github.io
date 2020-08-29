@@ -201,13 +201,13 @@
 <h1>iqplot.strip<a class="headerlink" href="#iqplot-strip" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
 <dt id="iqplot.strip">
-<code class="sig-prename descclassname">iqplot.</code><code class="sig-name descname">strip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cats</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q_axis</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">palette</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_legend</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">color_column</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tooltips</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">marker</span><span class="o">=</span><span class="default_value">'circle'</span></em>, <em class="sig-param"><span class="n">jitter</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">marker_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">jitter_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">horizontal</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.strip" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">iqplot.</code><code class="sig-name descname">strip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cats</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q_axis</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">palette</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_legend</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">color_column</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">parcoord_column</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">tooltips</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">marker</span><span class="o">=</span><span class="default_value">'circle'</span></em>, <em class="sig-param"><span class="n">jitter</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">marker_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">jitter_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">parcoord_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">horizontal</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.strip" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make a strip plot.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>data</strong> (<em>Pandas DataFrame</em><em>, </em><em>1D Numpy array</em><em>, or </em><em>xarray</em>) – DataFrame containing tidy data for plotting.  If a Numpy array,
-a single category is assumed and a box plot generated from
+a single category is assumed and a strip plot generated from
 data.</p></li>
 <li><p><strong>q</strong> (<em>hashable</em>) – Name of column to use as quantitative variable if <cite>data</cite> is a
 Pandas DataFrame. Otherwise, <cite>q</cite> is used as the quantitative
@@ -225,8 +225,11 @@ which they appeared in the inputted data frame.</p></li>
 <li><p><strong>p</strong> (<em>bokeh.plotting.Figure instance</em><em>, or </em><em>None</em><em> (</em><em>default</em><em>)</em>) – If None, create a new figure. Otherwise, populate the existing
 figure <cite>p</cite>.</p></li>
 <li><p><strong>show_legend</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, display legend.</p></li>
-<li><p><strong>color_column</strong> (<em>str</em><em>, </em><em>default None</em>) – Column of <cite>data</cite> to use in determining color of glyphs. If None,
+<li><p><strong>color_column</strong> (<em>hashable</em><em>, </em><em>default None</em>) – Column of <cite>data</cite> to use in determining color of glyphs. If None,
 then <cite>cats</cite> is used.</p></li>
+<li><p><strong>parcoord_column</strong> (<em>hashable</em><em>, </em><em>default None</em>) – Column of <cite>data</cite> to use to construct a parallel coordinate plot.
+Data points with like entries in the parcoord_column are
+connected with lines.</p></li>
 <li><p><strong>tooltips</strong> (<em>list of 2-tuples</em>) – Specification for tooltips as per Bokeh specifications. For
 example, if we want <cite>col1</cite> and <cite>col2</cite> tooltips, we can use
 <cite>tooltips=[(‘label 1’: ‘&#64;col1’), (‘label 2’: ‘&#64;col2’)]</cite>.</p></li>
@@ -282,11 +285,11 @@ instantiating the figure.</p></li>
   <div role="contentinfo">
     <p>
       <span class="lastupdated">
-        Last updated on Aug 23, 2020.
+        Last updated on Aug 29, 2020.
       </span>
 
     </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7f91951d4910> 
+  </div> <jinja2.runtime.BlockReference object at 0x7fd9742697f0> 
 
 <p>© 2020 Justin Bois.</p>
 

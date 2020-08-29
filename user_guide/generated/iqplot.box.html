@@ -207,8 +207,8 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>data</strong> (<em>Pandas DataFrame</em><em>, </em><em>1D Numpy array</em><em>, or </em><em>xarray</em>) – DataFrame containing tidy data for plotting.  If a Numpy array,
-a single category is assumed and a box plot generated from
-data.</p></li>
+a single category is assumed and a box plot with a single box is
+generated from data.</p></li>
 <li><p><strong>q</strong> (<em>hashable</em>) – Name of column to use as quantitative variable if <cite>data</cite> is a
 Pandas DataFrame. Otherwise, <cite>q</cite> is used as the quantitative
 axis label.</p></li>
@@ -227,8 +227,8 @@ figure <cite>p</cite>.</p></li>
 <li><p><strong>whisker_caps</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, put caps on whiskers. If False, omit caps.</p></li>
 <li><p><strong>display_points</strong> (<em>bool</em><em>, </em><em>default True</em>) – If True, display outliers and any other points that arise from
 categories with fewer than <cite>min_data</cite> data points; otherwise
-suppress them. This should only be False when making an overlay
-with a strip plot.</p></li>
+suppress them. This should only be False when using the boxes
+as annotation on another plot.</p></li>
 <li><p><strong>outlier_marker</strong> (<em>str</em><em>, </em><em>default 'circle'</em>) – Name of marker to be used in the plot (ignored if <cite>formal</cite> is
 False). Must be one of[‘asterisk’, ‘circle’, ‘circle_cross’,
 ‘circle_x’, ‘cross’, ‘dash’, ‘diamond’, ‘diamond_cross’, ‘hex’,
@@ -292,11 +292,11 @@ plotted as individual points.</p>
   <div role="contentinfo">
     <p>
       <span class="lastupdated">
-        Last updated on Aug 23, 2020.
+        Last updated on Aug 29, 2020.
       </span>
 
     </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7f919529b2b0> 
+  </div> <jinja2.runtime.BlockReference object at 0x7fd9741aa460> 
 
 <p>© 2020 Justin Bois.</p>
 
