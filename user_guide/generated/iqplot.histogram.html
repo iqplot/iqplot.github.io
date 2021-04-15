@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>iqplot.histogram &mdash; iqplot  documentation</title>
   
@@ -13,12 +13,16 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
 
   
   
+
   
+  
+
   
 
   
@@ -31,8 +35,10 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/togglebutton.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
+        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
@@ -55,7 +61,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> iqplot
+            <a href="../../index.html" class="icon icon-home"> iqplot
           
 
           
@@ -148,6 +154,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -201,7 +209,7 @@
 <h1>iqplot.histogram<a class="headerlink" href="#iqplot-histogram" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
 <dt id="iqplot.histogram">
-<code class="sig-prename descclassname">iqplot.</code><code class="sig-name descname">histogram</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cats</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">palette</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">q_axis</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">p</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rug</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">rug_height</span><span class="o">=</span><span class="default_value">0.05</span></em>, <em class="sig-param"><span class="n">show_legend</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">legend_label</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">legend_location</span><span class="o">=</span><span class="default_value">'right'</span></em>, <em class="sig-param"><span class="n">legend_orientation</span><span class="o">=</span><span class="default_value">'vertical'</span></em>, <em class="sig-param"><span class="n">bins</span><span class="o">=</span><span class="default_value">'freedman-diaconis'</span></em>, <em class="sig-param"><span class="n">density</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">kind</span><span class="o">=</span><span class="default_value">'step_filled'</span></em>, <em class="sig-param"><span class="n">click_policy</span><span class="o">=</span><span class="default_value">'hide'</span></em>, <em class="sig-param"><span class="n">line_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rug_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">horizontal</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.histogram" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">iqplot.</span></code><code class="sig-name descname"><span class="pre">histogram</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vertical'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'freedman-diaconis'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'step_filled'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hide'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.histogram" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make a plot of histograms.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -282,27 +290,21 @@ the plot.</p></li>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="iqplot.ecdf.html" class="btn btn-neutral float-right" title="iqplot.ecdf" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="iqplot.stripbox.html" class="btn btn-neutral float-left" title="iqplot.stripbox" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="iqplot.ecdf.html" class="btn btn-neutral float-right" title="iqplot.ecdf" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="iqplot.stripbox.html" class="btn btn-neutral float-left" title="iqplot.stripbox" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
       <span class="lastupdated">
-        Last updated on Jan 12, 2021.
+        Last updated on Apr 15, 2021.
       </span>
 
     </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7f9d8979d0d0> 
+  </div> <jinja2.runtime.BlockReference object at 0x7f821052c730> 
 
 <p>© 2020 Justin Bois.</p>
 
@@ -315,7 +317,6 @@ the plot.</p></li>
  
 
 </footer>
-
         </div>
       </div>
 
