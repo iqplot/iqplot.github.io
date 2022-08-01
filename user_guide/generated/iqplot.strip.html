@@ -1,75 +1,40 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>iqplot.strip &mdash; iqplot  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/togglebutton.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="iqplot.stripbox" href="iqplot.stripbox.html" />
     <link rel="prev" title="iqplot.box" href="iqplot.box.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F0F0F0" >
-          
-
-          
             <a href="../../index.html" class="icon icon-home"> iqplot
-          
-
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -77,25 +42,14 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Getting started</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html">Purpose and contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html#why-iqplot">Why iqplot?</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User guide</span></p>
+<p class="caption" role="heading"><span class="caption-text">User guide</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../user_guide.html">Basic usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../omissions.html">Intentional omissions</a></li>
@@ -104,65 +58,34 @@
 <li class="toctree-l2"><a class="reference internal" href="iqplot.box.html">iqplot.box</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">iqplot.strip</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.stripbox.html">iqplot.stripbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.striphistogram.html">iqplot.striphistogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.histogram.html">iqplot.histogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.ecdf.html">iqplot.ecdf</a></li>
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">License and citation</span></p>
+<p class="caption" role="heading"><span class="caption-text">License and citation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html">Credits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#license">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#citing-iqplot">Citing iqplot</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F0F0F0" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">iqplot</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
 <li><a href="https://github.com/justinbois/iqplot">iqplot repo on GitHub</a></li>
 
-    
   <li class="wy-breadcrumbs-aside">
     
         
@@ -174,13 +97,11 @@
   </li>
 
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS overrides for sphinx_rtd_theme */
@@ -205,14 +126,14 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="iqplot-strip">
-<h1>iqplot.strip<a class="headerlink" href="#iqplot-strip" title="Permalink to this headline">¶</a></h1>
+<section id="iqplot-strip">
+<h1>iqplot.strip<a class="headerlink" href="#iqplot-strip" title="Permalink to this heading"></a></h1>
 <dl class="py function">
-<dt id="iqplot.strip">
-<code class="sig-prename descclassname"><span class="pre">iqplot.</span></code><code class="sig-name descname"><span class="pre">strip</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parcoord_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tooltips</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'circle'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jitter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jitter_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parcoord_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.strip" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="iqplot.strip">
+<span class="sig-prename descclassname"><span class="pre">iqplot.</span></span><span class="sig-name descname"><span class="pre">strip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vertical'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hide'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parcoord_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tooltips</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'circle'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cat_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jitter_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swarm_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parcoord_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jitter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.strip" title="Permalink to this definition"></a></dt>
 <dd><p>Make a strip plot.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>data</strong> (<em>Pandas DataFrame</em><em>, </em><em>1D Numpy array</em><em>, or </em><em>xarray</em>) – DataFrame containing tidy data for plotting.  If a Numpy array,
 a single category is assumed and a strip plot generated from
@@ -233,6 +154,16 @@ which they appeared in the inputted data frame.</p></li>
 <li><p><strong>p</strong> (<em>bokeh.plotting.Figure instance</em><em>, or </em><em>None</em><em> (</em><em>default</em><em>)</em>) – If None, create a new figure. Otherwise, populate the existing
 figure <cite>p</cite>.</p></li>
 <li><p><strong>show_legend</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, display legend.</p></li>
+<li><p><strong>legend_location</strong> (<em>str</em><em>, </em><em>default 'right'</em>) – Location of legend. If one of “right”, “left”, “above”, or
+“below”, the legend is placed outside of the plot area. If one
+of “top_left”, “top_center”, “top_right”, “center_right”,
+“bottom_right”, “bottom_center”, “bottom_left”, “center_left”,
+or “center”, the legend is placed within the plot area. If a
+2-tuple, legend is placed according to the coordinates in the
+tuple.</p></li>
+<li><p><strong>legend_orientation</strong> (<em>str</em><em>, </em><em>default 'vertical'</em>) – Either ‘horizontal’ or ‘vertical’.</p></li>
+<li><p><strong>legend_click_policy</strong> (<em>str</em><em>, </em><em>default 'hide'</em>) – Either ‘hide’, ‘mute’, or None; how the glyphs respond when the
+corresponding category is clicked in the legend.</p></li>
 <li><p><strong>color_column</strong> (<em>hashable</em><em>, </em><em>default None</em>) – Column of <cite>data</cite> to use in determining color of glyphs. If None,
 then <cite>cats</cite> is used.</p></li>
 <li><p><strong>parcoord_column</strong> (<em>hashable</em><em>, </em><em>default None</em>) – Column of <cite>data</cite> to use to construct a parallel coordinate plot.
@@ -246,7 +177,10 @@ False). Must be one of[‘asterisk’, ‘circle’, ‘circle_cross’,
 ‘circle_x’, ‘cross’, ‘dash’, ‘diamond’, ‘diamond_cross’, ‘hex’,
 ‘inverted_triangle’, ‘square’, ‘square_cross’, ‘square_x’,
 ‘triangle’, ‘x’]</p></li>
-<li><p><strong>jitter</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, apply a jitter transform to the glyphs.</p></li>
+<li><p><strong>spread</strong> (<em>str</em><em> or </em><em>None</em><em>, </em><em>default None</em>) – If ‘jitter’, spread points out using a jitter transform. If
+‘swarm’, spread points in beeswarm style. In None or ‘none’, do
+not spread.</p></li>
+<li><p><strong>cat_grid</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, show grid lines for categorical axis.</p></li>
 <li><p><strong>marker_kwargs</strong> (<em>dict</em>) – Keyword arguments to pass when adding markers to the plot.
 [“x”, “y”, “source”, “cat”, “legend”] are note allowed because
 they are determined by other inputs.</p></li>
@@ -255,45 +189,66 @@ not specified, default is
 <cite>{‘distribution’: ‘normal’, ‘width’: 0.1}</cite>. If the user
 specifies <cite>{‘distribution’: ‘uniform’}</cite>, the <cite>‘width’</cite> entry is
 adjusted to 0.4.</p></li>
+<li><p><strong>swarm_kwargs</strong> (<em>dict</em>) – <p>Keyword arguments for use in generating swarm. Keys with allowed
+values are:</p>
+<blockquote>
+<div><ul>
+<li><p>’corral’: Either ‘gutter’ (default) or ‘wrap’. This</p></li>
+</ul>
+<p>specifies how points that are moved too far out are dealt
+with. Using ‘gutter’, points are overlayed at the maximum
+allowed distance. Using ‘wrap’, points are reflected inwards
+form the maximal extent and possibly overlayed with other
+points.</p>
+<ul>
+<li><p>’priority’: Either ‘ascending’ (default) or ‘descending’.</p></li>
+</ul>
+<p>Sort order when determining which points get moved in the
+y-direction first.</p>
+<ul>
+<li><p>marker_pad_px : Gap between markers in units of pixels,</p></li>
+</ul>
+<p>default 0.</p>
+</div></blockquote>
+</p></li>
+<li><p><strong>jitter</strong> (<em>bool</em><em>, </em><em>default False</em>) – Deprecated, use <cite>spread</cite>.</p></li>
 <li><p><strong>horizontal</strong> (<em>bool</em><em> or </em><em>None</em><em>, </em><em>default None</em>) – Deprecated. Use <cite>q_axis</cite>.</p></li>
 <li><p><strong>val</strong> (<em>hashable</em>) – Deprecated, use <cite>q</cite>.</p></li>
+<li><p><strong>click_policy</strong> (<em>str</em><em>, </em><em>default 'hide'</em>) – Deprecated. Use <cite>legend_click_policy</cite>.</p></li>
 <li><p><strong>kwargs</strong> – Any kwargs to be passed to <cite>bokeh.plotting.figure()</cite> when
 instantiating the figure.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>output</strong> – Plot populated with a strip plot.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>bokeh.plotting.Figure instance</p>
 </dd>
 </dl>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="iqplot.stripbox.html" class="btn btn-neutral float-right" title="iqplot.stripbox" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="iqplot.box.html" class="btn btn-neutral float-left" title="iqplot.box" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="iqplot.stripbox.html" class="btn btn-neutral float-right" title="iqplot.stripbox" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-      <span class="lastupdated">
-        Last updated on Apr 15, 2021.
-      </span>
+      <span class="lastupdated">Last updated on Jul 31, 2022.
+      </span></p>
+  </div>
 
-    </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7f82101f5760> 
+   <jinja2.runtime.BlockReference object at 0x7fa6c9841940> 
 
-<p>© 2020 Justin Bois.</p>
+<p>© 2022 Justin Bois.</p>
 
 <p>This document was prepared at <a rel="caltech" href="http://www.caltech.edu">Caltech</a> with financial support from the <a rel="rosen" href="http://rosen.caltech.edu">Donna and Benjamin M. Rosen Bioengineering Center</a>.</p>
 
@@ -306,22 +261,13 @@ instantiating the figure.</p></li>
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-    
+  </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

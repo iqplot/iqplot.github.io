@@ -1,75 +1,40 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>iqplot.histogram &mdash; iqplot  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/togglebutton.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="iqplot.ecdf" href="iqplot.ecdf.html" />
-    <link rel="prev" title="iqplot.stripbox" href="iqplot.stripbox.html" /> 
+    <link rel="prev" title="iqplot.striphistogram" href="iqplot.striphistogram.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #F0F0F0" >
-          
-
-          
             <a href="../../index.html" class="icon icon-home"> iqplot
-          
-
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -77,25 +42,14 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Getting started</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html">Purpose and contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html#why-iqplot">Why iqplot?</a></li>
 </ul>
-<p class="caption"><span class="caption-text">User guide</span></p>
+<p class="caption" role="heading"><span class="caption-text">User guide</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../user_guide.html">Basic usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../omissions.html">Intentional omissions</a></li>
@@ -104,65 +58,34 @@
 <li class="toctree-l2"><a class="reference internal" href="iqplot.box.html">iqplot.box</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.strip.html">iqplot.strip</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.stripbox.html">iqplot.stripbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.striphistogram.html">iqplot.striphistogram</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">iqplot.histogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.ecdf.html">iqplot.ecdf</a></li>
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">License and citation</span></p>
+<p class="caption" role="heading"><span class="caption-text">License and citation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html">Credits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#license">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#citing-iqplot">Citing iqplot</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F0F0F0" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">iqplot</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
 <li><a href="https://github.com/justinbois/iqplot">iqplot repo on GitHub</a></li>
 
-    
   <li class="wy-breadcrumbs-aside">
     
         
@@ -174,13 +97,11 @@
   </li>
 
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS overrides for sphinx_rtd_theme */
@@ -205,14 +126,14 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="iqplot-histogram">
-<h1>iqplot.histogram<a class="headerlink" href="#iqplot-histogram" title="Permalink to this headline">¶</a></h1>
+<section id="iqplot-histogram">
+<h1>iqplot.histogram<a class="headerlink" href="#iqplot-histogram" title="Permalink to this heading"></a></h1>
 <dl class="py function">
-<dt id="iqplot.histogram">
-<code class="sig-prename descclassname"><span class="pre">iqplot.</span></code><code class="sig-name descname"><span class="pre">histogram</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vertical'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'freedman-diaconis'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'step_filled'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hide'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.histogram" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="iqplot.histogram">
+<span class="sig-prename descclassname"><span class="pre">iqplot.</span></span><span class="sig-name descname"><span class="pre">histogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vertical'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hide'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tooltips</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'freedman-diaconis'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrangement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'stack'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mirror</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hist_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conf_int</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ptiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[2.5,</span> <span class="pre">97.5]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_bs_reps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rug_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conf_int_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.histogram" title="Permalink to this definition"></a></dt>
 <dd><p>Make a plot of histograms.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>data</strong> (<em>Pandas DataFrame</em><em>, </em><em>1D Numpy array</em><em>, or </em><em>xarray</em>) – DataFrame containing tidy data for plotting.  If a Numpy array,
 a single category is assumed and a box plot generated from
@@ -222,8 +143,8 @@ Pandas DataFrame. Otherwise, <cite>q</cite> is used as the quantitative
 axis label.</p></li>
 <li><p><strong>cats</strong> (<em>hashable</em><em> or </em><em>list of hashables</em>) – Name of column(s) to use as categorical variable(s).</p></li>
 <li><p><strong>q_axis</strong> (<em>str</em><em>, </em><em>either 'x'</em><em> or </em><em>'y'</em><em>, </em><em>default 'x'</em>) – Axis along which the quantitative value varies.</p></li>
-<li><p><strong>palette</strong> (<em>list of strings of hex colors</em><em>, or </em><em>single hex string</em>) – If a list, color palette to use. If a single string representing
-a hex color, all glyphs are colored with that color. Default is
+<li><p><strong>palette</strong> (<em>list colors</em><em>, or </em><em>single color string</em>) – If a list, color palette to use. If a single string representing
+a color, all glyphs are colored with that color. Default is
 colorcet.b_glasbey_category10 from the colorcet package.</p></li>
 <li><p><strong>order</strong> (<em>list</em><em> or </em><em>None</em>) – If not None, must be a list of unique group names when the input
 data frame is grouped by <cite>cats</cite>. The order of the list specifies
@@ -232,6 +153,11 @@ None, the categories appear in the order in which they appeared
 in the inputted data frame.</p></li>
 <li><p><strong>p</strong> (<em>bokeh.plotting.Figure instance</em><em>, or </em><em>None</em><em> (</em><em>default</em><em>)</em>) – If None, create a new figure. Otherwise, populate the existing
 figure <cite>p</cite>.</p></li>
+<li><p><strong>rug</strong> (<em>bool</em><em>, </em><em>default True</em>) – If True, also include a rug plot. If, however, <cite>bins</cite> is ‘exact’
+or ‘integer’, the <cite>rug</cite> kwarg is ignored.</p></li>
+<li><p><strong>rug_height</strong> (<em>float</em><em>, </em><em>default None</em>) – Height of the rug plot as a fraction of the highest point in the
+histograms. For ‘overlay’ arrangement, default is 0.05. For
+‘stacked’ arrangement, default is 0.2.</p></li>
 <li><p><strong>legend_label</strong> (<em>str</em><em>, </em><em>default None</em>) – If <cite>cats</cite> is None and <cite>show_legend</cite> is True, then if
 <cite>legend_label</cite> is not None, a legend is created for the glyph
 on the plot and labeled with <cite>legend_label</cite>. Otherwise, no
@@ -244,6 +170,12 @@ or “center”, the legend is placed within the plot area. If a
 2-tuple, legend is placed according to the coordinates in the
 tuple.</p></li>
 <li><p><strong>legend_orientation</strong> (<em>str</em><em>, </em><em>default 'vertical'</em>) – Either ‘horizontal’ or ‘vertical’.</p></li>
+<li><p><strong>legend_click_policy</strong> (<em>str</em><em>, </em><em>default 'hide'</em>) – Either ‘hide’, ‘mute’, or None; how the glyphs respond when the
+corresponding category is clicked in the legend.</p></li>
+<li><p><strong>tooltips</strong> (<em>list of 2-tuples</em>) – Specification for tooltips as per Bokeh specifications. For
+example, if we want <cite>col1</cite> and <cite>col2</cite> tooltips, we can use
+<cite>tooltips=[(‘label 1’: ‘&#64;col1’), (‘label 2’: ‘&#64;col2’)]</cite>. Ignored
+if <cite>rug</cite> is False.</p></li>
 <li><p><strong>bins</strong> (<em>int</em><em>, </em><em>array_like</em><em>, or </em><em>str</em><em>, </em><em>default 'freedman-diaconis'</em>) – If int or array_like, setting for <cite>bins</cite> kwarg to be passed to
 <cite>np.histogram()</cite>. If ‘exact’, then each unique value in the
 data gets its own bin. If ‘integer’, then integer data is
@@ -251,62 +183,75 @@ assumed and each integer gets its own bin. If ‘sqrt’, uses the
 square root rule to determine number of bins. If
 <cite>freedman-diaconis</cite>, uses the Freedman-Diaconis rule for number
 of bins.</p></li>
-<li><p><strong>rug</strong> (<em>bool</em><em>, </em><em>default True</em>) – If True, also include a rug plot. If, however, <cite>bins</cite> is ‘exact’
-or ‘integer’, the <cite>rug</cite> kwarg is ignored.</p></li>
-<li><p><strong>rug_height</strong> (<em>float</em><em>, </em><em>default 0.05</em>) – Height of the rug plot as a fraction of the highest point in the
-histograms.</p></li>
-<li><p><strong>density</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, normalize the histograms. Otherwise, base the
-histograms on counts.</p></li>
-<li><p><strong>kind</strong> (<em>str</em><em>, </em><em>default 'step_filled'</em>) – The kind of histogram to display. Allowed values are ‘step’ and
-‘step_filled’.</p></li>
-<li><p><strong>click_policy</strong> (<em>str</em><em>, </em><em>default 'hide'</em>) – Either ‘hide’, ‘mute’, or None; how the glyphs respond when the
-corresponding category is clicked in the legend.</p></li>
+<li><p><strong>density</strong> (<em>None</em><em> or </em><em>bool</em>) – If True, normalize the histograms. Otherwise, base the
+histograms on counts. Must be True for arrangement = ‘stack’
+because there is no absolute scale along the categorical axis.
+For arrangement = ‘overlay’, <cite>density</cite> is assumed to be False if
+None is given.</p></li>
+<li><p><strong>style</strong> (<em>None</em><em> or </em><em>one of</em><em> [</em><em>'step'</em><em>, </em><em>'step_filled'</em><em>]</em>) – Default for overlayed histograms is ‘step’ and for stacked
+histograms ‘step_filled’. The exception is when <cite>cont_int</cite> is
+True, in which case <cite>style</cite> must be ‘step’.</p></li>
+<li><p><strong>arrangement</strong> (<em>'stack'</em><em> or </em><em>'overlay'</em><em>, </em><em>default 'stack'</em>) – Arrangement of histograms. If ‘overlay’, histograms are overlaid
+on the same plot. If ‘stack’, histograms are stacked one on top
+of the other.</p></li>
+<li><p><strong>mirror</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, reflect the histogram through zero. Ignored if
+<cite>arrangement == ‘overlay’</cite>.</p></li>
+<li><p><strong>hist_height</strong> (<em>float</em><em>, </em><em>default 0.75</em>) – Maximal height of histogram of its confidence interval as a
+fraction of available height along categorical axis. Only active
+when <cite>arrangement</cite> is ‘stack’.</p></li>
+<li><p><strong>conf_int</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, display confidence interval of ECDF.</p></li>
+<li><p><strong>ptiles</strong> (<em>list</em><em>, </em><em>default</em><em> [</em><em>2.5</em><em>, </em><em>97.5</em><em>]</em>) – The percentiles to use for the confidence interval. Ignored if
+<cite>conf_int</cite> is False.</p></li>
+<li><p><strong>n_bs_reps</strong> (<em>int</em><em>, </em><em>default 10</em><em>,</em><em>000</em>) – Number of bootstrap replicates to do to compute confidence
+interval. Ignored if <cite>conf_int</cite> is False.</p></li>
 <li><p><strong>line_kwargs</strong> (<em>dict</em>) – Keyword arguments to pass to <cite>p.line()</cite> in constructing the
 histograms. By default, {“line_width”: 2}.</p></li>
 <li><p><strong>fill_kwargs</strong> (<em>dict</em>) – Keyword arguments to pass to <cite>p.patch()</cite> when making the fill
-for the step-filled histogram. Ignored if <cite>kind = ‘step’</cite>. By
-default {“fill_alpha”: 0.3, “line_alpha”: 0}.</p></li>
+for the step-filled histogram or confidence intervals. Ignored
+if <cite>style = ‘step’</cite> and <cite>conf_int</cite> is False. By default
+{“fill_alpha”: 0.3, “line_alpha”: 0}.</p></li>
 <li><p><strong>rug_kwargs</strong> (<em>dict</em>) – Keyword arguments to pass to <cite>p.multi_line()</cite> when making the
 rug plot.</p></li>
 <li><p><strong>horizontal</strong> (<em>bool</em><em> or </em><em>None</em><em>, </em><em>default None</em>) – Deprecated. Use <cite>q_axis</cite>.</p></li>
 <li><p><strong>val</strong> (<em>hashable</em>) – Deprecated, use <cite>q</cite>.</p></li>
+<li><p><strong>click_policy</strong> (<em>str</em><em>, </em><em>default 'hide'</em>) – Deprecated. Use <cite>legend_click_policy</cite>.</p></li>
+<li><p><strong>conf_int_kwargs</strong> (<em>dict</em>) – Deprecated. Use <cite>fill_kwargs</cite>.</p></li>
+<li><p><strong>kind</strong> (<em>str</em><em>, </em><em>default 'step_filled'</em>) – Deprecated. Use <cite>style</cite>.</p></li>
 <li><p><strong>kwargs</strong> – Any kwargs to be passed to <cite>bokeh.plotting.figure()</cite> when making
 the plot.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>output</strong> – Figure populated with histograms.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Bokeh figure</p>
 </dd>
 </dl>
+<p class="rubric">Notes</p>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="iqplot.striphistogram.html" class="btn btn-neutral float-left" title="iqplot.striphistogram" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="iqplot.ecdf.html" class="btn btn-neutral float-right" title="iqplot.ecdf" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="iqplot.stripbox.html" class="btn btn-neutral float-left" title="iqplot.stripbox" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-      <span class="lastupdated">
-        Last updated on Apr 15, 2021.
-      </span>
+      <span class="lastupdated">Last updated on Jul 31, 2022.
+      </span></p>
+  </div>
 
-    </p>
-  </div> <jinja2.runtime.BlockReference object at 0x7f821052c730> 
+   <jinja2.runtime.BlockReference object at 0x7fa6e3bb2100> 
 
-<p>© 2020 Justin Bois.</p>
+<p>© 2022 Justin Bois.</p>
 
 <p>This document was prepared at <a rel="caltech" href="http://www.caltech.edu">Caltech</a> with financial support from the <a rel="rosen" href="http://rosen.caltech.edu">Donna and Benjamin M. Rosen Bioengineering Center</a>.</p>
 
@@ -319,22 +264,13 @@ the plot.</p></li>
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-    
+  </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

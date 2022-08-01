@@ -1,0 +1,6 @@
+﻿iqplot.striphistogram
+=====================
+
+.. currentmodule:: iqplot
+
+.. autofunction:: striphistogram
