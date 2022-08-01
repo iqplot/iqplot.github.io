@@ -23,6 +23,6 @@ It is best to cite the package using its DOI and version number. Here is a citat
       url = {http://dx.doi.org/10.22002/D1.20247},
       author = {Bois, Justin S.},
       keywords = {Github},
-      title = {justinbois/iqplot: Version 0.3.0
+      title = {justinbois/iqplot: Version 0.3.0},
       year = {2022}
     }
