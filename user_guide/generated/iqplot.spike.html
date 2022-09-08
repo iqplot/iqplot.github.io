@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iqplot.spike &mdash; iqplot  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="iqplot.histogram" href="iqplot.histogram.html" />
+    <link rel="prev" title="iqplot.stripbox" href="iqplot.stripbox.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #F0F0F0" >
+            <a href="../../index.html" class="icon icon-home"> iqplot
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html">Purpose and contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/purpose.html#why-iqplot">Why iqplot?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">Basic usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../omissions.html">Intentional omissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../holoviews.html">Relationship to HoloViews</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="iqplot.box.html">iqplot.box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.strip.html">iqplot.strip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.stripbox.html">iqplot.stripbox</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">iqplot.spike</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.histogram.html">iqplot.histogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.striphistogram.html">iqplot.striphistogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iqplot.ecdf.html">iqplot.ecdf</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">License and citation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#license">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits_and_citation.html#citing-iqplot">Citing iqplot</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F0F0F0" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">iqplot</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+<li><a href="https://github.com/justinbois/iqplot">iqplot repo on GitHub</a></li>
+
+  <li class="wy-breadcrumbs-aside">
+    
+        
+        
+            <a href="../../_sources/user_guide/generated/iqplot.spike.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    
+  </li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="iqplot-spike">
+<h1>iqplot.spike<a class="headerlink" href="#iqplot-spike" title="Permalink to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="iqplot.spike">
+<span class="sig-prename descclassname"><span class="pre">iqplot.</span></span><span class="sig-name descname"><span class="pre">spike</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vertical'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hide'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrangement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spike_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conf_int</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ptiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2.5,</span> <span class="pre">97.5)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_bs_reps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.spike" title="Permalink to this definition"></a></dt>
+<dd><p>Make a spike plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>Pandas DataFrame</em><em>, </em><em>1D Numpy array</em><em>, or </em><em>xarray</em>) – DataFrame containing tidy data for plotting.  If a Numpy array,
+a single category is assumed and a box plot generated from
+data.</p></li>
+<li><p><strong>q</strong> (<em>hashable</em>) – Name of column to use as quantitative variable if <cite>data</cite> is a
+Pandas DataFrame. Otherwise, <cite>q</cite> is used as the quantitative
+axis label.</p></li>
+<li><p><strong>cats</strong> (<em>hashable</em><em> or </em><em>list of hashables</em>) – Name of column(s) to use as categorical variable(s).</p></li>
+<li><p><strong>q_axis</strong> (<em>str</em><em>, </em><em>either 'x'</em><em> or </em><em>'y'</em><em>, </em><em>default 'x'</em>) – Axis along which the quantitative value varies.</p></li>
+<li><p><strong>palette</strong> (<em>list colors</em><em>, or </em><em>single color string</em>) – If a list, color palette to use. If a single string representing
+a color, all glyphs are colored with that color. Default is
+colorcet.b_glasbey_category10 from the colorcet package.</p></li>
+<li><p><strong>order</strong> (<em>list</em><em> or </em><em>None</em>) – If not None, must be a list of unique group names when the input
+data frame is grouped by <cite>cats</cite>. The order of the list specifies
+the ordering of the categorical variables in the legend. If
+None, the categories appear in the order in which they appeared
+in the inputted data frame.</p></li>
+<li><p><strong>p</strong> (<em>bokeh.plotting.Figure instance</em><em>, or </em><em>None</em><em> (</em><em>default</em><em>)</em>) – If None, create a new figure. Otherwise, populate the existing
+figure <cite>p</cite>.</p></li>
+<li><p><strong>legend_label</strong> (<em>str</em><em>, </em><em>default None</em>) – If <cite>cats</cite> is None and <cite>show_legend</cite> is True, then if
+<cite>legend_label</cite> is not None, a legend is created for the glyph
+on the plot and labeled with <cite>legend_label</cite>. Otherwise, no
+legend is created if <cite>cats</cite> is None.</p></li>
+<li><p><strong>legend_location</strong> (<em>str</em><em>, </em><em>default 'right'</em>) – Location of legend. If one of “right”, “left”, “above”, or
+“below”, the legend is placed outside of the plot area. If one
+of “top_left”, “top_center”, “top_right”, “center_right”,
+“bottom_right”, “bottom_center”, “bottom_left”, “center_left”,
+or “center”, the legend is placed within the plot area. If a
+2-tuple, legend is placed according to the coordinates in the
+tuple.</p></li>
+<li><p><strong>legend_orientation</strong> (<em>str</em><em>, </em><em>default 'vertical'</em>) – Either ‘horizontal’ or ‘vertical’.</p></li>
+<li><p><strong>legend_click_policy</strong> (<em>str</em><em>, </em><em>default 'hide'</em>) – Either ‘hide’, ‘mute’, or None; how the glyphs respond when the
+corresponding category is clicked in the legend.</p></li>
+<li><p><strong>fraction</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, the spike height is given by the fraction of data
+points having the given value. Otherwise, the height of a spike
+is given by the count of data points having the given value.</p></li>
+<li><p><strong>style</strong> (<em>None</em><em> or </em><em>one of</em><em> [</em><em>'spike'</em><em>, </em><em>'spike-dot'</em><em>, </em><em>'dot'</em><em>]</em>) – ‘spike’ gives a traditional spike plot. ‘spike-dot’ additionally
+features dots on top of the spikes, similar in appearance to a
+lollipop plot. ‘dot’ has the dot at the top of the spike, but
+the spike is not shown. Default is ‘spike-dot’, unless
+<cite>conf_int</cite> is True and the number of categorial values is
+greater than one, in which case the default is ‘dot’ (and only
+‘dot’ is allowed) for confidence intervals to avoid clashes.</p></li>
+<li><p><strong>arrangement</strong> (<em>'stack'</em><em> or </em><em>'overlay'</em><em>, </em><em>default 'stack'</em>) – Arrangement of spike plots. If ‘overlay’, spikes are overlaid
+on the same plot. If ‘stack’, spikes are stacked one on top
+of the other.</p></li>
+<li><p><strong>spike_height</strong> (<em>float</em><em>, </em><em>default 0.75</em>) – Maximal height of spike or its confidence interval as a
+fraction of available height along categorical axis. Only active
+when <cite>arrangement</cite> is ‘stack’.</p></li>
+<li><p><strong>conf_int</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, display confidence interval of the spikes.</p></li>
+<li><p><strong>ptiles</strong> (<em>list with two elements</em><em>, </em><em>default</em><em> [</em><em>2.5</em><em>, </em><em>97.5</em><em>]</em>) – The percentiles to use for the confidence interval. Ignored if
+<cite>conf_int</cite> is False.</p></li>
+<li><p><strong>n_bs_reps</strong> (<em>int</em><em>, </em><em>default 10</em><em>,</em><em>000</em>) – Number of bootstrap replicates to do to compute confidence
+interval. Ignored if <cite>conf_int</cite> is False.</p></li>
+<li><p><strong>marker_kwargs</strong> (<em>dict</em>) – Keyword arguments to be passed to <cite>p.circle()</cite> for dots at the
+top of spikes.</p></li>
+<li><p><strong>line_kwargs</strong> (<em>dict</em>) – Keyword arguments to pass to <cite>p.segment()</cite> in constructing the
+spikes and confidence intervals. By default, {“line_width”: 2}.</p></li>
+<li><p><strong>horizontal</strong> (<em>bool</em><em> or </em><em>None</em><em>, </em><em>default None</em>) – Deprecated. Use <cite>q_axis</cite>.</p></li>
+<li><p><strong>val</strong> (<em>hashable</em>) – Deprecated, use <cite>q</cite>.</p></li>
+<li><p><strong>click_policy</strong> (<em>str</em><em>, </em><em>default 'hide'</em>) – Deprecated. Use <cite>legend_click_policy</cite>.</p></li>
+<li><p><strong>kwargs</strong> – Any kwargs to be passed to <cite>bokeh.plotting.figure()</cite> when making
+the plot.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>output</strong> – Figure populated with histograms.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Bokeh figure</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="iqplot.stripbox.html" class="btn btn-neutral float-left" title="iqplot.stripbox" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="iqplot.histogram.html" class="btn btn-neutral float-right" title="iqplot.histogram" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">Last updated on Sep 08, 2022.
+      </span></p>
+  </div>
+
+   <jinja2.runtime.BlockReference object at 0x7f9a85d662b0> 
+
+<p>© 2022 Justin Bois.</p>
+
+<p>This document was prepared at <a rel="caltech" href="http://www.caltech.edu">Caltech</a> with financial support from the <a rel="rosen" href="http://rosen.caltech.edu">Donna and Benjamin M. Rosen Bioengineering Center</a>.</p>
+
+<br />
+
+<p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+
+ 
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+         .wy-nav-content { max-width: none; }
+  </style>
+
+
+
+</body>
+</html>

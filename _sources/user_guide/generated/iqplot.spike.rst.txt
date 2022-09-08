@@ -1,0 +1,6 @@
+﻿iqplot.spike
+============
+
+.. currentmodule:: iqplot
+
+.. autofunction:: spike

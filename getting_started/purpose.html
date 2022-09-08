@@ -122,34 +122,23 @@
 <span id="purpose"></span><h1>Purpose and contents<a class="headerlink" href="#purpose-and-contents" title="Permalink to this heading"></a></h1>
 <p>This package generates plots of data with the following properties:</p>
 <ul class="simple">
-<li><p>One variable is quantitative.</p></li>
+<li><p>Exactly one variable is quantitative.</p></li>
 <li><p>All other variables of interest, if any, are categorical.</p></li>
 </ul>
 <p>The first two letters of the package name are meant to indicate one (Roman number I) quantitative (Q) variable.</p>
 <p>The subclass of data sets that contain a single quantitative variable (and possibly several categorical variables) abound in the biological sciences, which was the primary motivation for making this package.</p>
-<p>There are six types of plots that iqplot can generate.</p>
-<ul>
-<li><p><strong>Plots with a categorical axis</strong></p>
-<blockquote>
-<div><ul class="simple">
+<p>There are seven types of plots that iqplot can generate.</p>
+<ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Box_plot">Box plots</a></p></li>
 <li><p>Strip plots</p></li>
+<li><p>Spike plots</p></li>
 <li><p>Strip-box plots (strip and box plots overlaid)</p></li>
-<li><p>Strip-histogram plots (strip and histogram plots overlaid)</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p><strong>Plots without a categorical axis</strong></p>
-<blockquote>
-<div><ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Histogram">Histograms</a></p></li>
+<li><p>Strip-histogram plots (strip and histogram plots overlaid)</p></li>
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Empirical_distribution_function)">ECDFs</a></p></li>
 </ul>
-</div></blockquote>
-</li>
-</ul>
-<p>In general, you should <strong>plot all of your data</strong>. Strip plots and <a class="reference external" href="https://en.wikipedia.org/wiki/Empirical_distribution_function">ECDFs</a> do this, but box plots and histograms do not . A box plot provides a quick visual display of summary statistics (specifically quantiles), and a histogram provides an approximate visualization of the probability density function underlying the data generation process. Both serve a purpose, and are included in iqplot. However, in my opinion, a box plot should mostly be used when overlayed with a strip plot, as strip-box plot. The box plot is then an annotation of the plot of all of the data. For visualizing the shape of distributions, ECDFs are superior to histograms in that they serve to visualize the cumulative distribution function of the underlying the data generation process (which has the same information as the probability density function) and do so while plotting all data and not introducing arbitrary binning.</p>
-<p>So, you should view the box plot and histogram functionality of iqplot to be add-ons, with strip plots (annotated with boxes and histograms if desired) and ECDFs being the most important functionality.</p>
+<p>In general, you should <strong>plot all of your data</strong>. Strip plots and <a class="reference external" href="https://en.wikipedia.org/wiki/Empirical_distribution_function">ECDFs</a> do this (and so do spike plots, though awkwardly when the quantitative data do not take on discrete values), but box plots and histograms do not. A box plot provides a quick visual display of summary statistics (specifically quantiles), and a histogram provides an approximate visualization of the probability density function underlying the data generation process. Both serve a purpose, and are included in iqplot. However, in my opinion, a box plot should mostly be used when overlayed with a strip plot, as strip-box plot. The box plot is then an annotation of the plot of all of the data. For visualizing the shape of distributions, ECDFs are superior to histograms in that they serve to visualize the cumulative distribution function of the underlying the data generation process (which has the same information as the probability density function) and do so while plotting all data and not introducing arbitrary binning.</p>
+<p>So, you should view the box plot and histogram functionality of iqplot to be add-ons, with strip plots (annotated with boxes and histograms if desired) and ECDFs being the most important functionality. Spike plots are useful in the special case where the quantitative data take on discrete values.</p>
 </section>
 <section id="why-iqplot">
 <h1>Why iqplot?<a class="headerlink" href="#why-iqplot" title="Permalink to this heading"></a></h1>
@@ -168,11 +157,11 @@
 
   <div role="contentinfo">
     <p>
-      <span class="lastupdated">Last updated on Aug 30, 2022.
+      <span class="lastupdated">Last updated on Sep 08, 2022.
       </span></p>
   </div>
 
-   <jinja2.runtime.BlockReference object at 0x7f91579d95e0> 
+   <jinja2.runtime.BlockReference object at 0x7f9a9ff11550> 
 
 <p>© 2022 Justin Bois.</p>
 
