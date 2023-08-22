@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intentional omissions &mdash; iqplot  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -115,10 +114,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="Intentional-omissions">
+  <div class="section" id="Intentional-omissions">
 <h1>Intentional omissions<a class="headerlink" href="#Intentional-omissions" title="Permalink to this heading"></a></h1>
 <p>iqplot is intentionally limited in scope. It is restricted to only data sets with a single quantitative variable. It is further limited in that only five types of plots (albeit with allowance for a fair amount of configurability) are allowed. Nonetheless, there are a few plots that fall into the one quantitative variable class of plots. Here, we address why those are <em>not</em> included.</p>
-<section id="Why-no-plots-with-a-second-quantitative-variable?">
+<div class="section" id="Why-no-plots-with-a-second-quantitative-variable?">
 <h2>Why no plots with a second quantitative variable?<a class="headerlink" href="#Why-no-plots-with-a-second-quantitative-variable?" title="Permalink to this heading"></a></h2>
 <p>The most common questions I get about extending this package are:</p>
 <ol class="arabic simple">
@@ -555,7 +554,7 @@ if (force === true) {
 </table>
 </div></div>
 </div>
-<section id="Converting-a-quantitative-value-to-a-color">
+<div class="section" id="Converting-a-quantitative-value-to-a-color">
 <h3>Converting a quantitative value to a color<a class="headerlink" href="#Converting-a-quantitative-value-to-a-color" title="Permalink to this heading"></a></h3>
 <p>Central to representing a quantitative variable as color is the ability to a quantitative value to a color. The function below accomplishes this; giving quantitative data <code class="docutils literal notranslate"><span class="pre">x</span></code> and a list of colors <code class="docutils literal notranslate"><span class="pre">colors</span></code>, the values of <code class="docutils literal notranslate"><span class="pre">x</span></code> are converted to a corresponding color.</p>
 <div class="nbinput nblast docutils container">
@@ -650,8 +649,8 @@ if (force === true) {
 </div>
 </div>
 <p>We will use this function as we hack our way into plotting two quantitative variables using iqplot.</p>
-</section>
-<section id="Considering-an-ordinal-variable-as-categorical">
+</div>
+<div class="section" id="Considering-an-ordinal-variable-as-categorical">
 <h3>Considering an ordinal variable as categorical<a class="headerlink" href="#Considering-an-ordinal-variable-as-categorical" title="Permalink to this heading"></a></h3>
 <p>The ordinal <code class="docutils literal notranslate"><span class="pre">cyl</span></code> variable, which indicates the number of cylinders in a car, ranging from three to eight, could be considered a quantitative variable (or at least ordinal). <code class="docutils literal notranslate"><span class="pre">iqplot.strip()</span></code> takes a <code class="docutils literal notranslate"><span class="pre">color_column</span></code> keyword argument that specifies an ostensibly categorical variable to be used to color glyphs. We can specify <code class="docutils literal notranslate"><span class="pre">'cyl'</span></code> to be the <code class="docutils literal notranslate"><span class="pre">color_column</span></code> and then choose a quantitative palette, e.g., Viridis, and color the ordinal variable with it.</p>
 <div class="nbinput docutils container">
@@ -923,8 +922,8 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</section>
-<section id="Directly-specifying-color">
+</div>
+<div class="section" id="Directly-specifying-color">
 <h3>Directly specifying color<a class="headerlink" href="#Directly-specifying-color" title="Permalink to this heading"></a></h3>
 <p>The above examples work if the second quantitative variable to be used for coloring takes on only a few discrete values. If there are many values, a legend is not suitable for displaying the relationship between color and quantitative values; a colorbar is better suited. Fortunately, if the column specified in the <code class="docutils literal notranslate"><span class="pre">color_column</span></code> keyword argument contains only hex codes for colors, these colors are applied directly to the glyphs. We can take advantage of this to hack our way into showing the
 weight of the vehicles with color.</p>
@@ -1111,9 +1110,9 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</section>
-</section>
-<section id="Why-no-stacked-bar-graphs?">
+</div>
+</div>
+<div class="section" id="Why-no-stacked-bar-graphs?">
 <h2>Why no stacked bar graphs?<a class="headerlink" href="#Why-no-stacked-bar-graphs?" title="Permalink to this heading"></a></h2>
 <p>Stacked bar graphs are useful to displaying relative count data, but unfortunately, their utility is somewhat restricted to that. All five functions in iqplot handle arbitrary scalar-valued quantitative data (including negative values), and allow for arbitrary many measurements per category. A stacked bar graph either requires one non-negative quantitative value per category or requires a count operation on the data points, which has a very specific, possibly ambiguous meaning. So, a stacked bar
 graph would necessitate restrictions on allowed data types beyond those allowed by the other kinds of plots.</p>
@@ -1255,8 +1254,8 @@ var element = document.currentScript.previousSibling.previousSibling;
 </script></div>
 </div>
 <p>In this case, we can immediately read off the number of cars with the respective number of cylinders.</p>
-</section>
-<section id="Why-no-bar-graphs?">
+</div>
+<div class="section" id="Why-no-bar-graphs?">
 <h2>Why no bar graphs?<a class="headerlink" href="#Why-no-bar-graphs?" title="Permalink to this heading"></a></h2>
 <p>I strongly prefer strip plots (with jitter) to box plots and ECDFs to histograms. Why? Because in the strip plots and ECDFs, you are <strong>plotting all of your data</strong>. In practice, these are the only two types of visualizations for data with a categorical axis I use (though I’ll sometimes overlay a jitter on a box plot to show some of the summary statistics).</p>
 <p>A bar graph is the antithesis of plotting all of your data. You distill all of the information in the data set down to one or two summary statistics, and then use giant glyphs to show them. You should plot all of your data, so you shouldn’t make bar graphs. iqplot will not help you practice bad plotting.</p>
@@ -1337,8 +1336,8 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</section>
-<section id="Why-no-violin-plots?">
+</div>
+<div class="section" id="Why-no-violin-plots?">
 <h2>Why no violin plots?<a class="headerlink" href="#Why-no-violin-plots?" title="Permalink to this heading"></a></h2>
 <p>Similarly to histograms, <a class="reference external" href="https://en.wikipedia.org/wiki/Violin_plot">violin plots</a> are a way to visualize the probability density function (pdf) of a quantitative variable. Violin plots accomplish this using <a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_density_estimation">kernel density estimation</a> (KDE), a procedure by which a smooth function is used to approximate the pdf of a random variable. Like binning must be specified for a histogram, the kernel and its bandwidth must be specified to
 compute a KDE. So, like histograms, violin plots require specification of arbitrary parameters.</p>
@@ -1437,8 +1436,8 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</section>
-<section id="Why-no-extended-box-plots?">
+</div>
+<div class="section" id="Why-no-extended-box-plots?">
 <h2>Why no extended box plots?<a class="headerlink" href="#Why-no-extended-box-plots?" title="Permalink to this heading"></a></h2>
 <p>The box in a box-and-whisker plot contains the middle two quartiles of the quantitative data. One can add more boxes containing different percentile ranges, and such plots are called extended box plots. I did not include this functionality because I view box plots as annotations of well-defined, visually interpretable summary statistics. Extending the box plots becomes challenging because annotation or textual description of the edges of all of the boxes is necessary. If more percentiles are
 needed, they may be added to a plot, e.g., with dashes. Here is an example where we want to add the 10th and 90th percentiles of the data in red.</p>
@@ -1519,8 +1518,8 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</section>
-<section id="Why-no-lollipop-plots?">
+</div>
+<div class="section" id="Why-no-lollipop-plots?">
 <h2>Why no lollipop plots?<a class="headerlink" href="#Why-no-lollipop-plots?" title="Permalink to this heading"></a></h2>
 <p>Lollipop plots visually resemble spike plots that are included in iqplot. They consist of a spike with a dot on top of it, resembling a lollipop. There are generally two types of plots referred to as lollipop plots.</p>
 <ol class="arabic simple">
@@ -1601,13 +1600,13 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</section>
-<section id="Why-is-there-such-limited-statistical-functionality?">
+</div>
+<div class="section" id="Why-is-there-such-limited-statistical-functionality?">
 <h2>Why is there such limited statistical functionality?<a class="headerlink" href="#Why-is-there-such-limited-statistical-functionality?" title="Permalink to this heading"></a></h2>
 <p>Many plotting packages refer to themselves as “statistical visualization packages” or the like, with the excellent <a class="reference external" href="https://seaborn.pydata.org">Seaborn package</a> being an example. iqplot is not meant to be that. It only provides bootstrap confidence intervals for ECDFs and histograms and quantile calculations necessary to make box-and-whisker plots. The quantile calculations for box-and-whisker plots are obvious inclusions. The confidence intervals for ECDFs and histograms are included because
 they are confidence intervals <em>of the plots themselves</em>. (One could also make confidence intervals for the quantiles in a box plot, thereby constituting confidence intervals of the plot itself, but it is unclear how to display the result in a clear way.) Other statistical inference should be done as needed in a bespoke manner for a given inference problem for a given data set.</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -1621,11 +1620,11 @@ they are confidence intervals <em>of the plots themselves</em>. (One could also 
 
   <div role="contentinfo">
     <p>
-      <span class="lastupdated">Last updated on Jun 13, 2023.
+      <span class="lastupdated">Last updated on Aug 22, 2023.
       </span></p>
   </div>
 
-   <jinja2.runtime.BlockReference object at 0x1280bd710> 
+   <jinja2.runtime.BlockReference object at 0x16e395ed0> 
 
 <p>© 2022 Justin Bois.</p>
 

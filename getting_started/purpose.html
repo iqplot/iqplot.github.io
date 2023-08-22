@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Purpose and contents &mdash; iqplot  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -98,7 +97,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="purpose-and-contents">
+  <div class="section" id="purpose-and-contents">
 <span id="purpose"></span><h1>Purpose and contents<a class="headerlink" href="#purpose-and-contents" title="Permalink to this heading"></a></h1>
 <p>This package generates plots of data with the following properties:</p>
 <ul class="simple">
@@ -119,11 +118,11 @@
 </ul>
 <p>In general, you should <strong>plot all of your data</strong>. Strip plots and <a class="reference external" href="https://en.wikipedia.org/wiki/Empirical_distribution_function">ECDFs</a> do this (and so do spike plots, though awkwardly when the quantitative data do not take on discrete values), but box plots and histograms do not. A box plot provides a quick visual display of summary statistics (specifically quantiles), and a histogram provides an approximate visualization of the probability density function underlying the data generation process. Both serve a purpose, and are included in iqplot. However, in my opinion, a box plot should mostly be used when overlayed with a strip plot, as strip-box plot. The box plot is then an annotation of the plot of all of the data. For visualizing the shape of distributions, ECDFs are superior to histograms in that they serve to visualize the cumulative distribution function of the underlying the data generation process (which has the same information as the probability density function) and do so while plotting all data and not introducing arbitrary binning.</p>
 <p>So, you should view the box plot and histogram functionality of iqplot to be add-ons, with strip plots (annotated with boxes and histograms if desired) and ECDFs being the most important functionality. Spike plots are useful in the special case where the quantitative data take on discrete values.</p>
-</section>
-<section id="why-iqplot">
+</div>
+<div class="section" id="why-iqplot">
 <h1>Why iqplot?<a class="headerlink" href="#why-iqplot" title="Permalink to this heading"></a></h1>
 <p>This package was originally developed to enable rapid generation of these plots, particularly ECDFs using <a class="reference external" href="https://bokeh.pydata.org/">Bokeh</a>, a powerful plotting library. <a class="reference external" href="https://holoviews.org/">HoloViews</a> has emerged as the primary high-level plotting package that can use Bokeh to render plots. Much of what iqplot provides is available in HoloViews, and you can see comparisons in the <a class="reference internal" href="../user_guide/holoviews.html#Relationship-to-HoloViews"><span class="std std-ref">Relationship to HoloViews</span></a> section of the iqplot documentation. Nonetheless, I have still found this package useful to quickly generate plots. Importantly, generating ECDFs with bootstrapped confidence intervals is available in iqplot, but is nontrivial to do using HoloViews.</p>
-</section>
+</div>
 
 
            </div>
@@ -137,11 +136,11 @@
 
   <div role="contentinfo">
     <p>
-      <span class="lastupdated">Last updated on Jun 13, 2023.
+      <span class="lastupdated">Last updated on Aug 22, 2023.
       </span></p>
   </div>
 
-   <jinja2.runtime.BlockReference object at 0x1275341d0> 
+   <jinja2.runtime.BlockReference object at 0x16d7477d0> 
 
 <p>© 2022 Justin Bois.</p>
 
