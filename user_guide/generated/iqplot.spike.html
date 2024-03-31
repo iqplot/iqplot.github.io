@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>iqplot.spike &mdash; iqplot  documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=22ddcdb3" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/clipboard.min.js"></script>
-        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -61,7 +64,10 @@
 <li class="toctree-l2"><a class="reference internal" href="iqplot.box.html">iqplot.box</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.strip.html">iqplot.strip</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.stripbox.html">iqplot.stripbox</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">iqplot.spike</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">iqplot.spike</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#iqplot.spike"><code class="docutils literal notranslate"><span class="pre">spike()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.histogram.html">iqplot.histogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.striphistogram.html">iqplot.striphistogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="iqplot.ecdf.html">iqplot.ecdf</a></li>
@@ -106,14 +112,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="iqplot-spike">
-<h1>iqplot.spike<a class="headerlink" href="#iqplot-spike" title="Permalink to this heading"></a></h1>
+  <section id="iqplot-spike">
+<h1>iqplot.spike<a class="headerlink" href="#iqplot-spike" title="Link to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="iqplot.spike">
-<span class="sig-prename descclassname"><span class="pre">iqplot.</span></span><span class="sig-name descname"><span class="pre">spike</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vertical'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hide'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrangement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spike_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conf_int</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ptiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2.5,</span> <span class="pre">97.5)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_bs_reps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.spike" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">iqplot.</span></span><span class="sig-name descname"><span class="pre">spike</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vertical'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hide'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrangement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spike_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conf_int</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ptiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2.5,</span> <span class="pre">97.5)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_bs_reps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">marker_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">click_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqplot.spike" title="Link to this definition"></a></dt>
 <dd><p>Make a spike plot.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>data</strong> (<em>Pandas DataFrame</em><em>, </em><em>1D Numpy array</em><em>, or </em><em>xarray</em>) – DataFrame containing tidy data for plotting.  If a Numpy array,
 a single category is assumed and a box plot generated from
@@ -121,7 +127,7 @@ data.</p></li>
 <li><p><strong>q</strong> (<em>hashable</em>) – Name of column to use as quantitative variable if <cite>data</cite> is a
 Pandas DataFrame. Otherwise, <cite>q</cite> is used as the quantitative
 axis label.</p></li>
-<li><p><strong>cats</strong> (<em>hashable</em><em> or </em><em>list of hashables</em>) – Name of column(s) to use as categorical variable(s).</p></li>
+<li><p><strong>cats</strong> (<em>hashable</em><em> or </em><em>list</em><em> of </em><em>hashables</em>) – Name of column(s) to use as categorical variable(s).</p></li>
 <li><p><strong>q_axis</strong> (<em>str</em><em>, </em><em>either 'x'</em><em> or </em><em>'y'</em><em>, </em><em>default 'x'</em>) – Axis along which the quantitative value varies.</p></li>
 <li><p><strong>palette</strong> (<em>list colors</em><em>, or </em><em>single color string</em>) – If a list, color palette to use. If a single string representing
 a color, all glyphs are colored with that color. Default is
@@ -150,7 +156,7 @@ corresponding category is clicked in the legend.</p></li>
 <li><p><strong>fraction</strong> (<em>bool</em><em>, </em><em>default False</em>) – If True, the spike height is given by the fraction of data
 points having the given value. Otherwise, the height of a spike
 is given by the count of data points having the given value.</p></li>
-<li><p><strong>style</strong> (<em>None</em><em> or </em><em>one of</em><em> [</em><em>'spike'</em><em>, </em><em>'spike-dot'</em><em>, </em><em>'dot'</em><em>]</em>) – ‘spike’ gives a traditional spike plot. ‘spike-dot’ additionally
+<li><p><strong>style</strong> (<em>None</em><em> or </em><em>one</em><em> of </em><em>[</em><em>'spike'</em><em>, </em><em>'spike-dot'</em><em>, </em><em>'dot'</em><em>]</em>) – ‘spike’ gives a traditional spike plot. ‘spike-dot’ additionally
 features dots on top of the spikes, similar in appearance to a
 lollipop plot. ‘dot’ has the dot at the top of the spike, but
 the spike is not shown. Default is ‘spike-dot’, unless
@@ -168,7 +174,7 @@ when <cite>arrangement</cite> is ‘stack’.</p></li>
 <cite>conf_int</cite> is False.</p></li>
 <li><p><strong>n_bs_reps</strong> (<em>int</em><em>, </em><em>default 10</em><em>,</em><em>000</em>) – Number of bootstrap replicates to do to compute confidence
 interval. Ignored if <cite>conf_int</cite> is False.</p></li>
-<li><p><strong>marker_kwargs</strong> (<em>dict</em>) – Keyword arguments to be passed to <cite>p.circle()</cite> for dots at the
+<li><p><strong>marker_kwargs</strong> (<em>dict</em>) – Keyword arguments to be passed to <cite>p.scatter()</cite> for dots at the
 top of spikes.</p></li>
 <li><p><strong>line_kwargs</strong> (<em>dict</em>) – Keyword arguments to pass to <cite>p.segment()</cite> in constructing the
 spikes and confidence intervals. By default, {“line_width”: 2}.</p></li>
@@ -179,17 +185,17 @@ spikes and confidence intervals. By default, {“line_width”: 2}.</p></li>
 the plot.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>output</strong> – Figure populated with histograms.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Bokeh figure</p>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
@@ -203,11 +209,11 @@ the plot.</p></li>
 
   <div role="contentinfo">
     <p>
-      <span class="lastupdated">Last updated on Aug 22, 2023.
+      <span class="lastupdated">Last updated on Mar 30, 2024.
       </span></p>
   </div>
 
-   <jinja2.runtime.BlockReference object at 0x16d5b3f50> 
+   <jinja2.runtime.BlockReference object at 0x13ff87200> 
 
 <p>© 2022 Justin Bois.</p>
 

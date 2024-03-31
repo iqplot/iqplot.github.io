@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Relationship to HoloViews &mdash; iqplot  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/nbsphinx-code-cells.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=22ddcdb3" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
         <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -113,8 +116,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="Relationship-to-HoloViews">
-<h1>Relationship to HoloViews<a class="headerlink" href="#Relationship-to-HoloViews" title="Permalink to this heading"></a></h1>
+  <section id="Relationship-to-HoloViews">
+<h1>Relationship to HoloViews<a class="headerlink" href="#Relationship-to-HoloViews" title="Link to this heading"></a></h1>
 <p>Many users of iqplot may also use <a class="reference external" href="http://holoviews.org/">HoloViews</a>, an excellent high-level plotting package that can render plots using Bokeh. Users familiar with HoloViews understand the concept of a <strong>key dimension</strong> (kdims) and a <strong>value dimension</strong> (vdims), which are central to building HoloViews elements. Here, I will demonstrate how the <code class="docutils literal notranslate"><span class="pre">q</span></code> and <code class="docutils literal notranslate"><span class="pre">cats</span></code> arguments for the iqplot functions relate to kdims and vdims in HoloViews for the one quantitative/<em>n</em> categorical types of data
 sets.</p>
 <p>I will again use the automobile data set. For all plots, I will take the origin of the car to be the sole categorical variable and the miles per gallon (mpg) to be the quantitative variable.</p>
@@ -2545,11 +2548,11 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </pre></div>
 </div>
 </div>
-<div class="section" id="Plots-with-a-categorical-axis">
-<h2>Plots with a categorical axis<a class="headerlink" href="#Plots-with-a-categorical-axis" title="Permalink to this heading"></a></h2>
+<section id="Plots-with-a-categorical-axis">
+<h2>Plots with a categorical axis<a class="headerlink" href="#Plots-with-a-categorical-axis" title="Link to this heading"></a></h2>
 <p>Box-and-whisker and strip plots in iqplot feature a categorical axis, with the other axis being quantitative. In this case the <code class="docutils literal notranslate"><span class="pre">q</span></code> variable corresponds to a HoloViews value dimension and the <code class="docutils literal notranslate"><span class="pre">cats</span></code> variable(s) correspond to HoloViews key dimensions.</p>
-<div class="section" id="Box-plots">
-<h3>Box plots<a class="headerlink" href="#Box-plots" title="Permalink to this heading"></a></h3>
+<section id="Box-plots">
+<h3>Box plots<a class="headerlink" href="#Box-plots" title="Link to this heading"></a></h3>
 <p>Building a box-and-whisker plot with HoloViews is very similar to building one with iqplot. We just have to remember that for box plot, HoloViews defines the categorical variable to be a key dimension and the quantitative variable to be a value dimension.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
@@ -2602,9 +2605,9 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</div>
-<div class="section" id="Strip-plots">
-<h3>Strip plots<a class="headerlink" href="#Strip-plots" title="Permalink to this heading"></a></h3>
+</section>
+<section id="Strip-plots">
+<h3>Strip plots<a class="headerlink" href="#Strip-plots" title="Link to this heading"></a></h3>
 <p>A strip plot is made in HoloViews using a Scatter element where the categorical variable is a key dimension.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
@@ -2658,9 +2661,9 @@ var element = document.currentScript.previousSibling.previousSibling;
 </script></div>
 </div>
 <p>Note that as of July 2022, <code class="docutils literal notranslate"><span class="pre">hv.Scatter</span></code> <a class="reference external" href="https://github.com/holoviz/holoviews/issues/4509">does not support multiple categorical variables</a>, though this feature is likely <a class="reference external" href="https://github.com/holoviz/holoviews/pull/3385">coming soon</a>. iqplot does have this capability for strip plots.</p>
-</div>
-<div class="section" id="Strip-box-plots">
-<h3>Strip-box plots<a class="headerlink" href="#Strip-box-plots" title="Permalink to this heading"></a></h3>
+</section>
+<section id="Strip-box-plots">
+<h3>Strip-box plots<a class="headerlink" href="#Strip-box-plots" title="Link to this heading"></a></h3>
 <p>Strip-box plots are easily implemented in HoloViews because of the composibility of its elements.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
@@ -2714,13 +2717,13 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</div>
-</div>
-<div class="section" id="Plots-without-a-categorical-axis">
-<h2>Plots without a categorical axis<a class="headerlink" href="#Plots-without-a-categorical-axis" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+<section id="Plots-without-a-categorical-axis">
+<h2>Plots without a categorical axis<a class="headerlink" href="#Plots-without-a-categorical-axis" title="Link to this heading"></a></h2>
 <p>When making ECDFs and histograms, both axes on the plot are quantitative and the categorical variable(s) are expressed using color. For these plots, we need to do groupby operations in HoloViews and make overlays, resulting in a significant difference between how we build the plots with iqplot versus HoloViews.</p>
-<div class="section" id="ECDFs">
-<h3>ECDFs<a class="headerlink" href="#ECDFs" title="Permalink to this heading"></a></h3>
+<section id="ECDFs">
+<h3>ECDFs<a class="headerlink" href="#ECDFs" title="Link to this heading"></a></h3>
 <p>To make a plot of an ECDF, we need to create another column in the data frame containing the value of the ECDF for each value of the quantitative variable. This is accomplished using Pandas.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
@@ -2847,9 +2850,9 @@ var element = document.currentScript.previousSibling.previousSibling;
 </script></div>
 </div>
 <p>Note that in HoloViews, there is no simple way to make a “staircase” ECDF, since that requires creating a new data frame with twice the number of data points in order to connect the lines in the staircase plot. There is also no direct way of making the bootstrap confidence interval.</p>
-</div>
-<div class="section" id="Histograms">
-<h3>Histograms<a class="headerlink" href="#Histograms" title="Permalink to this heading"></a></h3>
+</section>
+<section id="Histograms">
+<h3>Histograms<a class="headerlink" href="#Histograms" title="Link to this heading"></a></h3>
 <p>Histogams in HoloViews require specification of the counts and edges for each bin, as would be produced using <code class="docutils literal notranslate"><span class="pre">np.histogram()</span></code>. To make a histogram in HoloViews, then, we need to explicitly compute the bins. As we did for the ECDF example above, we do this by iterating over a Pandas GroupBy object. The <code class="docutils literal notranslate"><span class="pre">kdims</span></code> and <code class="docutils literal notranslate"><span class="pre">vdims</span></code> specification of the Histogram element are then simply axis labels, where the quantitative dimension is the key dimension.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -2925,9 +2928,9 @@ var element = document.currentScript.previousSibling.previousSibling;
 })(window);
 </script></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -2941,11 +2944,11 @@ var element = document.currentScript.previousSibling.previousSibling;
 
   <div role="contentinfo">
     <p>
-      <span class="lastupdated">Last updated on Aug 22, 2023.
+      <span class="lastupdated">Last updated on Mar 30, 2024.
       </span></p>
   </div>
 
-   <jinja2.runtime.BlockReference object at 0x16e3cd5d0> 
+   <jinja2.runtime.BlockReference object at 0x13f9b8aa0> 
 
 <p>© 2022 Justin Bois.</p>
 
